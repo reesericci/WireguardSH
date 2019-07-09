@@ -10,6 +10,7 @@ It is a pain to make new clients in WireGuard, that is no more with WireguardSH!
 3. run wireguard.sh
 4. Give it your Client name, IP address for the client, your DNS server address (Setup a pi-hole if you havent already), your public IP, and your WireGuard port.
 5. run the curl command every once in a while to keep updated
+
 To uninstall type in dpkg -r wireguardsh
 ## Things to note:
 The script will create a directory tree of client, keys
