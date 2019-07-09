@@ -1,6 +1,6 @@
-# wireguard.sh | an easy way to create clients in WireGuard
+# wireguardsh | an easy way to create clients in WireGuard
 
-It is a pain to make new clients in WireGuard, that is no more with wireguard.sh!
+It is a pain to make new clients in WireGuard, that is no more with wireguardsh!
 
 ## How to use the script:
 
@@ -9,7 +9,7 @@ It is a pain to make new clients in WireGuard, that is no more with wireguard.sh
 3. Rename all server keys to server_publickey and server_privatekey
 3. run sh wireguard.sh
 4. Give it your Client name, IP address for the client, your DNS server address (Setup a pi-hole if you havent already), your public IP, and your WireGuard port.
-
+5. run the curl command every once in a while to keep updated
 ## Things to note:
 The script will create a directory tree of client, keys
 Inside the client folder there will be the client configs from the script.
