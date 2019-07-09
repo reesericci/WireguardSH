@@ -12,3 +12,7 @@ It is a pain to make new clients in WireGuard, that is no more with wireguard.sh
 # Things to note:
 The script will create a directory tree of client, keys
 Inside the client folder there will be the client configs from the script.
+Inside the keys folder there will be a directory tree of server, client.
+Inside keys/client there is another tree of public, private.
+Inside keys/server there is the same tree.
+Inside keys/client/private there are private keys for the client,ect.
