@@ -2,10 +2,16 @@
 #!/bin/bash
 k="/etc/wireguard/keys"
 c="/etc/wireguard/client"
+pkg="qrencode"
 # Check if the current user is not root (it must be root)
 if [ "$USER" != "root" ]; then
 echo "Please run as root (type in sudo su then run the script)";
 else
+#-----Check If qrencode is installed-----------------
+if [ ! apt-get -qq install $pkg; ] then
+  apt install '$pkg'
+fi
+# done checking
 #-------------CHECK DIRECTORY TREE-----------------
 
 if [ ! -d "$k" ]; then
@@ -16,6 +22,8 @@ if [ ! -d "$k" ]; then
   mkdir /etc/wireguard/keys/client/private
   mkdir /etc/wireguard/keys/server/public
   mkdir /etc/wireguard/keys/server/private
+  mv /etc/wireguard/server_publickey /etc/wireguard/keys/server/public
+  mv /etc/wireguard/server_privatekey /etc/wireguard/keys/server/private
 fi
 if [ ! -d "$c" ]; then
   mkdir /etc/wireguard/client
