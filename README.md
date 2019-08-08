@@ -15,9 +15,15 @@ To uninstall type in `sudo rm /usr/bin/wireguardsh`
 
 ## Things to note:
 The script will create a directory tree of client, keys
- Inside the client folder there will be the client configs from the script.
- Inside the keys folder there will be a directory tree of server, client.
- Inside keys/client there is another tree of public, private.
- Inside keys/server there is the same tree.
- Inside keys/client/private there are private keys for the client,ect.
- It will automattically move all server keys into the keys/server folder
+ 
+Inside the client folder there will be the client configs from the script.
+ 
+Inside the keys folder there will be a directory tree of server, client.
+ 
+Inside keys/client there is another tree of public, private.
+ 
+Inside keys/server there is the same tree.
+ 
+Inside keys/client/private there are private keys for the client,ect.
+ 
+It will automattically move all server keys into the keys/server folder
