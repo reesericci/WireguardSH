@@ -7,11 +7,8 @@ pkg="qrencode"
 if [ "$USER" != "root" ]; then
 echo "Please run as root (type in sudo su then run the script)";
 else
-#-----Check If qrencode is installed-----------------
-if [ ! apt-get -qq install $pkg; ] then
-  apt install '$pkg'
-fi
-# done checking
+#-----Install qrencode-----------------
+apt-get install qrencode -y
 #-------------CHECK DIRECTORY TREE-----------------
 
 if [ ! -d "$k" ]; then
