@@ -10,6 +10,7 @@ It is a pain to make new clients in WireGuard, that is no more with WireguardSH!
 3. run a `sudo cp wireguardsh /usr/bin`
 4. To use the script type in `wireguardsh`
 4. Give it your Client name, IP address for the client, your DNS server address (Setup a pi-hole if you havent already), your public IP, and your WireGuard port.
+
 To uninstall type in `sudo rm /usr/bin/wireguardsh`
 
 ## Things to note:
