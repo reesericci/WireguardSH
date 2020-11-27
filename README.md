@@ -1,4 +1,6 @@
-# THIS PROJECT IS NOW DEPRECATED. Due to PiVPN now supporting Wireguard I have decided to deprecate this project as PiVPN is a much better script than this one.
+# THIS PROJECT IS NOW DEPRECATED. 
+### Due to PiVPN now supporting Wireguard I have decided to deprecate this project as PiVPN is a much better script than this one.
+________________________________________
 # WireguardSH | an easy way to create clients in WireGuard
 
 It is a pain to make new clients in WireGuard, that is no more with WireguardSH!
